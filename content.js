@@ -29,7 +29,7 @@ function callback(mutationList, observer) {
                     var text = element.innerHTML
 
                     emotelist.forEach(emote =>{
-                        text = text.replace(emote.name, `<img src=\"${emote.url}\" alt=\"${emote.name}\"/>`)
+                        text = text.replaceAll(emote.name, `<img src=\"${emote.url}\" alt=\"${emote.name}\"/>`)
                         console.log(emote)
                     })
                     //console.log(text)
