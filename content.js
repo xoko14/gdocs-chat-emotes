@@ -28,6 +28,7 @@ function callback(mutationList, observer) {
                 if (element.className == "docs-chat-message") {
                     var text = element.innerHTML
 
+                    //(?<=ffz:)\w*
                     emotelist.forEach(emote =>{
                         text = text.replaceAll(emote.name, `<img src=\"${emote.url}\" alt=\"${emote.name}\"/>`)
                         console.log(emote)
