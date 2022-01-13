@@ -1,14 +1,26 @@
 {
-"manifest_version": 2,
+    "manifest_version": 3,
     "name": "Emotes in Drive Chat",
     "description": "Twitch emotes in google docs chat",
     "version": "1.0",
-    "content_scripts" : [
-		{
-			"matches" : [
-				"https://docs.google.com/document/*"
-                 ],
-                  "js" : ["content.js"]
+    "content_scripts": [
+        {
+            "matches": [
+                "https://docs.google.com/document/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "db/emotelist.json"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
         }
     ]
 }
