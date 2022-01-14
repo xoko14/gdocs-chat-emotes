@@ -27,9 +27,14 @@ function callback(mutationList, observer) {
                     var text = element.innerHTML
 
                     emotelist.forEach(emote =>{
+                        // json emotes
                         text = text.replaceAll(emote.name, `<img src=\"${emote.url}\" alt=\"${emote.name}\"/>`)
 
+                        // FrankerFaceZ emotes
                         text = text.replaceAll(new RegExp("ffz:(\\w*)", "g"), "<img src=\"https://cdn.frankerfacez.com/emote/$1/1\"/>")
+
+                        // any image
+                        text = text.replace(new RegExp("img:{(.*)}"), "<img src=\"https://$1\" style=\"width: 100%;\"/>")
                     })
 
                     text = text.replaceAll()
