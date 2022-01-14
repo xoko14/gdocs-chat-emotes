@@ -1,4 +1,4 @@
-# Google Docs chat overhaul
+# Better Google Docs Chat
 
 ## Usage
 Post in chat:
