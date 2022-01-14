@@ -21,26 +21,23 @@ observer.observe(targetNode, observerOptions);
 
 function callback(mutationList, observer) {
     mutationList.forEach((mutation) => {
-        //console.log(mutation.type)
         if (mutation.addedNodes.length) {
             mutation.addedNodes.forEach(element => {
-                //console.log(element.classList)
                 if (element.className == "docs-chat-message") {
                     var text = element.innerHTML
 
-                    //(?<=ffz:)\w*
                     emotelist.forEach(emote =>{
                         text = text.replaceAll(emote.name, `<img src=\"${emote.url}\" alt=\"${emote.name}\"/>`)
-                        console.log(emote)
-                    })
-                    //console.log(text)
-                    element.innerHTML = text
 
-                    //<img src=\"https://cdn.betterttv.net/emote/56e9f494fff3cc5c35e5287e/1x\"/>
+                        text = text.replaceAll(new RegExp("ffz:(\\w*)", "g"), "<img src=\"https://cdn.frankerfacez.com/emote/$1/1\"/>")
+                    })
+
+                    text = text.replaceAll()
+                    element.innerHTML = text
                 }
             });
         }
     });
 }
 
-console.log("finished loading");
+console.log("finished loading")
