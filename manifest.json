@@ -6,7 +6,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://docs.google.com/document/*"
+                "https://docs.google.com/*"
             ],
             "js": [
                 "content.js"
