@@ -2,7 +2,7 @@
 
 ## Usage
 Post in chat:
-- `ffz:<emote-id>`: emote from [FrankerFaceZ](https://www.frankerfacez.com/)
+- `ffz:<emote-id>`: emote from [FrankerFaceZ](https://www.frankerfacez.com/emoticons/)
 - `img:{<url-without-https://>}`: image. Still in development as google docs's chat reformats any full URL as a hyperlink.
 
 Examples:
