@@ -33,6 +33,10 @@ function callback(mutationList, observer) {
                         // FrankerFaceZ emotes
                         text = text.replaceAll(new RegExp("ffz:(\\w*)", "g"), "<img src=\"https://cdn.frankerfacez.com/emote/$1/1\"/>")
 
+                        // FrankerFaceZ search
+                        text = text.replaceAll(new RegExp("ffzs:(\\w*)", "g"), "<img src=\"https://EmoteAPI.xoko14.repl.co/ffz/emote/$1\"/>")
+
+
                         // any image
                         text = text.replace(new RegExp("img:{(.*)}"), "<img src=\"https://$1\" style=\"width: 100%;\"/>")
                     })
