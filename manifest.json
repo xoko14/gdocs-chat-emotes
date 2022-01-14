@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Emotes in Drive Chat",
-    "description": "Twitch emotes in google docs chat",
+    "name": "Better Drive Chat",
+    "description": "Emotes and images in Google Docs chat.",
     "version": "1.0",
     "content_scripts": [
         {
