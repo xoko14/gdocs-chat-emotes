@@ -9,4 +9,4 @@ Examples:
 
 `ffz:162146` will post [AYAYA](https://www.frankerfacez.com/emoticon/162146-AYAYA) emote.
 
-`img{files.catbox.moe/u75ar8.png}` will post a screenshot of me editing this readme.
+`img:{files.catbox.moe/u75ar8.png}` will post a screenshot of me editing this readme.
