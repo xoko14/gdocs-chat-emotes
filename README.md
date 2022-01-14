@@ -11,7 +11,7 @@ Examples:
 
 `img:{files.catbox.moe/u75ar8.png}` will post a screenshot of me editing this readme.
 
-## Instalation
+## Installation
 
 1. Grab latest release from [releases](https://github.com/xoko14/gdocs-chat-emotes/releases/latest)
 2. Extract release somewhere (it needs to be kept there).
