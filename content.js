@@ -38,7 +38,10 @@ function callback(mutationList, observer) {
 
 
                         // any image
-                        text = text.replace(new RegExp("img:{(.*)}"), "<img src=\"https://$1\" style=\"width: 100%;\"/>")
+                        text = text.replace(new RegExp("img:{(.*)}"), (match, selection) => {
+                            var url = selection.match(new RegExp("(?<=<a rel=\"nofollow\" target=\"_blank\" href=\").*(?=\")", "g"))
+                            return `<img src=\"${url}\" style=\"width: 100%;\"/>`
+                        })
                     })
 
                     text = text.replaceAll()
