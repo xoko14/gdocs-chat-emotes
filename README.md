@@ -16,6 +16,11 @@ Examples:
 
 ## Installation
 
+### Firefox
+[Get from Firefox Add-Ons](https://addons.mozilla.org/es/firefox/addon/better-drive-chat/)
+
+### Chromium-based (Chrome, Edge, Brave...)
+
 1. Grab latest release from [releases](https://github.com/xoko14/gdocs-chat-emotes/releases/latest)
 2. Extract release somewhere (it needs to be kept there).
 3. Go to `chrome://extensions` (should work for any chromium-based web browser)
