@@ -20,9 +20,4 @@ Examples:
 [Get from Firefox Add-Ons](https://addons.mozilla.org/es/firefox/addon/better-drive-chat/)
 
 ### Chromium-based (Chrome, Edge, Brave...)
-
-1. Grab latest release from [releases](https://github.com/xoko14/gdocs-chat-emotes/releases/latest)
-2. Extract release somewhere (it needs to be kept there).
-3. Go to `chrome://extensions` (should work for any chromium-based web browser)
-4. Enable developer mode.
-5. Click _Load unpacked_ and select extracted folder.
+[Get from Chrome Web Store](https://chrome.google.com/webstore/detail/better-drive-chat/cdbilffelgliafnclliijhbcgkijhegc)
