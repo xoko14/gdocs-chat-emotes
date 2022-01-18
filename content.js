@@ -38,6 +38,12 @@ function callback(mutationList, observer) {
                         return `<img src=\"${url}\" style=\"width: 100%;\"/>`
                     })
 
+                    // youtube video
+                    text = text.replaceAll(
+                        new RegExp("https:\\/\\/(www\\.youtube\\.com\\/watch\\?v=|youtu.be\\/)(\\w*)", "g"),
+                        "<iframe width=\"100%\" src=\"https:\/\/www.youtube.com/embed/$2\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+                    )
+
                     //json emotes
                     emotelist.forEach(emote =>{
                         text = text.replaceAll(emote.name, `<img src=\"${emote.url}\" alt=\"${emote.name}\"/>`)
