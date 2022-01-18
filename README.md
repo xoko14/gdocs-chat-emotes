@@ -5,6 +5,8 @@ Post in chat:
 - `ffz:<emote-id>`: Send emote from [FrankerFaceZ](https://www.frankerfacez.com/emoticons/)
 - `ffzs:<emote-name>`: Search [FrankerFaceZ](https://www.frankerfacez.com/emoticons/) emote and get top result.
 - `img:{<url>}`: Send image.
+- Any valid youtube link: Send youtube video.
+- `vid:{<link-to-video>}`: Send video.
 
 Examples:
 
