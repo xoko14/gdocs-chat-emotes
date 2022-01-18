@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Better Drive Chat",
     "description": "Emotes and images in Google Docs chat.",
-    "version": "1.2",
+    "version": "1.2.1",
     "homepage_url": "https://github.com/xoko14/gdocs-chat-emotes",
     "icons": {
         "48": "icon.png",
