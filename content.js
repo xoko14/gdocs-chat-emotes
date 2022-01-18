@@ -23,7 +23,7 @@ function callback(mutationList, observer) {
         if (mutation.addedNodes.length) {
             mutation.addedNodes.forEach(element => {
                 if (element.className == "docs-chat-message") {
-                    var bubble = element.getElementsByClassName("docs-chat-message-bubble")[0]
+                    var bubble = element.getElementsByClassName("docs-chat-message-body")[0]
                     var text = bubble.innerHTML
 
                     // FrankerFaceZ emotes
@@ -40,9 +40,15 @@ function callback(mutationList, observer) {
 
                     // youtube video
                     text = text.replaceAll(
-                        new RegExp("https:\\/\\/(www\\.youtube\\.com\\/watch\\?v=|youtu.be\\/)(\\w*)", "g"),
+                        new RegExp(".*>https:\\/\\/(www\\.youtube\\.com\\/watch\\?v=|youtu.be\\/)([a-zA-Z-_0-9]*)<.*", "g"),
                         "<iframe width=\"100%\" src=\"https:\/\/www.youtube.com/embed/$2\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
                     )
+
+                    //any video
+                    text = text.replaceAll(new RegExp("vid:{(.*?)}", "g"), (match, selection) => {
+                        var url = selection.match(new RegExp("(?<=<a rel=\"nofollow\" target=\"_blank\" href=\").*(?=\")", "g"))
+                        return `<video style=\"width: 100%;\" controls><source src=\"${url}\"></video>`
+                    })
 
                     //json emotes
                     emotelist.forEach(emote =>{
